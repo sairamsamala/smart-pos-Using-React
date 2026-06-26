@@ -1,16 +1,21 @@
-# React + Vite
+# 🛒 Smart Retail POS & Self-Checkout System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, responsive Point-of-Sale (POS) and self-checkout web application designed for modern retail environments. 
 
-Currently, two official plugins are available:
+This project bridges the gap between web UI and physical hardware by integrating live camera feeds to scan real-world barcodes, combined with complex state management and fluid micro-interactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+* **📸 Live Hardware Integration:** Utilizes device cameras to actively scan and decode physical barcodes/QR codes using `html5-qrcode`.
+* **🧠 Complex State Management:** Intelligently handles cart logic, automatically grouping duplicate item scans into quantity multipliers and calculating real-time subtotals and taxes.
+* **✨ Fluid UI/UX Animations:** Leverages Framer Motion for premium, staggered entrance animations and state transitions, preventing layout shifts during rapid data changes.
+* **📱 Split-Screen Kiosk Layout:** Employs advanced CSS Grid and Flexbox within Tailwind CSS to ensure a flawlessly responsive, dark/light contrast UI optimized for tablet kiosks.
+* **💳 Simulated Payment Gateway:** Features a dynamic verification modal that generates a simulated UPI/Smart Pay QR code contingent on the cart's active total.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend Framework:** React.js (Bootstrapped with Vite)
+* **Styling:** Tailwind CSS
+* **Animations:** Framer Motion
+* **Icons:** Lucide React
+* **Hardware API:** HTML5-QRCode
